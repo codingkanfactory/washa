@@ -1,28 +1,23 @@
-
 <!DOCTYPE html>
-<meta name='viewport' content='width=device-width, initial-scale=1'/>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman User</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <img src="images/svg.svg" alt="Logo Washa " width="160" height="160">
-        <h2>Lapor Kak Osim</h2>
-    <p>Silahkan untuk mengimput pesan</p>
-    <form id="userForm">
-        
-        <textarea id="message" rows="5" placeholder="Tulis pesan disini" required></textarea>
-        <button type="submit">Kirim Pesan</button>
-    </form>
-</div>
-   
-
-<script type "module" src="scripts.js"></script>
+        <h2>Halaman User</h2>
+        <form id="userForm">
+            <textarea id="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+    <dialog id="successDialog">
+        <p>Pesan berhasil dikirim!</p>
+        <button id="closeDialog">Tutup</button>
+    </dialog>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
