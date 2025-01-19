@@ -17,12 +17,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebas
         const userForm = document.getElementById('userForm');
         userForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const deviceId = document.getElementById('deviceId').value;
+            
             const message = document.getElementById('message').value;
 
             const messagesRef = ref(db, 'messages');
             push(messagesRef, {
-                deviceId,
+                
                 message,
                 timestamp: new Date().toISOString()
             });
